@@ -1,0 +1,40 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %}Log in{% endblock %}
+
+{% block styles %}
+    {% comment %} <link rel="stylesheet" href="{% static 'css/custom.css' %}"> {% endcomment %}
+{% endblock %}
+
+{% block content %}
+    <!-- Header -->
+    <header class="py-5 justify-content-center" >
+        <div class="container px-5 pb-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-xxl-5">
+                    <!-- Header text content -->
+                    <!-- ... (tu contenido existente) -->
+                </div>
+                <div class="col-xxl-7 mx-auto">
+                    <!-- Formulario de inicio de sesión -->
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <h2 class="text-center mb-4">Iniciar Sesión</h2>
+                        <form action="" method="post" class="mb-4">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Usuario</label>
+                                <input type="text" id="login" name="username" class="form-control" placeholder="usuario">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" id="password" name="password" class="form-control" placeholder="password">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" value="Log In">Iniciar Sesión</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}

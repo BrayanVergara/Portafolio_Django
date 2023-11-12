@@ -1,0 +1,152 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %}Proyectos{% endblock %}
+
+{% block styles %}
+    {% comment %} <link rel="stylesheet" href="{% static 'css/custom.css' %}"> {% endcomment %}
+{% endblock %}
+
+{% block content %}
+
+    <!-- Resume Content-->
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-11 col-xl-9 col-xxl-8">
+                    <!-- Experience Section-->
+                    <section>
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                            <!-- Download resume button-->
+                            <!-- Note: Set the link href target to a PDF file within your project-->
+                            <a class="btn btn-primary px-4 py-3" href="#!">
+                                <div class="d-inline-block bi bi-download me-2"></div>
+                                Download Resume
+                            </a>
+                        </div>
+                        <!-- Módulo 1 - Descripción General del Rol de Consultor de TI -->
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <div class="text-primary fw-bolder mb-2">2023</div>
+                                            <div class="small fw-bolder">Programador</div>
+                                            <div class="small text-muted">Payroll</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="small">
+                                            Soy un programador en el area de Payroll de la empresa Intouch CX.
+                                            Mi trabajo es automatizar procesos para failitar el trabajo de diversas areas y optimizar los tiempos que toman
+                                            dichas tareas.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Módulo 2 - Desarrollo del Módulo de Medición del Clima Laboral -->
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <div class="text-primary fw-bolder mb-2">2023</div>
+                                            <div class="small fw-bolder">Automatizacion calculo dias de incapacidad(prorrogas)</div>
+                                            <div class="small text-muted">Payroll</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="small">
+                                            Una de mis contribuciones fue automatizar el proceso de calcular las prorrogas de una incapacidad teniendo en cuenta
+                                            el ultimo dia de incapacidad y el codigo de incapacidad, esta informacion se extraia a un dashboard donde se seccionaba 
+                                            la informacion en 4 casos, proximos a 90 dias, proximos a 120 dias, proximos a 180 dias y mayores a 180 dias, y una tabla 
+                                            donde se puede observar el detale de las incapacidades que componen esa prorroga.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Education Section-->
+                    <section>
+                        <h2 class="text-secondary fw-bolder mb-4">Educación</h2>
+                        <!-- Logro Educativo 1 - Ingeniería de Software -->
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <div class="text-secondary fw-bolder mb-2">2019 - 2024</div>
+                                            <div class="mb-2">
+                                                <div class="small fw-bolder">Universidad Manuela Beltrán</div>
+                                                <div class="small text-muted">Ingeniería de Software</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div>
+                                            Aquí puedes agregar una descripción o detalles adicionales sobre tu logro en Ingeniería de Software en la Universidad Manuela Beltrán.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- Divider-->
+                    <div class="pb-5"></div>
+                    <!-- Skills Section-->
+                    <section>
+                        <!-- Skillset Card-->
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <!-- Professional skills list-->
+                                <div class="mb-5">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="ri-tools-fill"></i></div>
+                                        <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Habilidades Profesionales</span></h3>
+                                    </div>
+                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                        <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Comunicación</div></div>
+                                        <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Trabajo en Equipo</div></div>
+                                        <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Resolución de Problemas</div></div>
+                                    </div>
+                                    <div class="row row-cols-1 row-cols-md-3">
+                                        <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Rápido Aprendizaje</div></div>
+                                        <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Adaptabilidad al Cambio</div></div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Languages list-->
+                                <div class="mb-0">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="ri-code-s-slash-fill"></i></div>
+                                        <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Lenguajes Programación</span></h3>
+                                    </div>
+                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                        <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
+                                        <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
+                                        <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
+                                    </div>
+                                    <div class="row row-cols-1 row-cols-md-3">
+                                        <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
+                                        <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">PHP</div></div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    <!-- Resume Content-->
+        
+{% endblock %}
+
+{% block javascript %}
+    {% comment %} <script src="{% static 'js/custom.js' %}"></script> {% endcomment %}
+{% endblock %}

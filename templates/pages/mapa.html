@@ -1,0 +1,44 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %}Sucursales{% endblock %}
+
+{% block styles %}
+    <!-- Agrega los estilos específicos del mapa aquí -->
+    <style>
+        #map {
+            height: 80%;
+            width: 100%;
+        }
+
+        /* ... Agrega otros estilos si es necesario ... */
+    </style>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Page content-->
+    <section class="py-5">
+        <div class="container px-3 px-md-5">
+            <!-- Mapa de Sucursales -->
+            <div class="bg-light rounded-4 py-4 px-4 px-md-5">
+                <div class="text-center mb-4">
+                    <h1 class="fw-bolder">Mapa</h1>
+                </div>
+                <div id="map">{{ map | safe }}</div>
+                <ul>
+                    {% for location in locations %}
+                        <li>{{ location.name }} - {{ location.address }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Page content-->
+
+{% endblock %}
+
+{% block javascript %}
+    <!-- Agrega los scripts específicos del mapa aquí -->
+{% endblock %}
